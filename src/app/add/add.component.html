@@ -1,0 +1,50 @@
+<div class="card card-body card-left">
+  <h2>Nuevo Price</h2>
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="mb-3 row">
+          <label for="productId" class="col-sm-2 col-form-label">Product Id</label>
+          <div class="col-sm-3">
+            <input type="number" formControlName="productId" class="form-control" id="productId">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="startDate" class="col-sm-2 col-form-label">Start Date</label>
+          <div class="col-sm-3">
+            <input type="datetime-local" formControlName="startDate" class="form-control" id="startDate">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="endDate" class="col-sm-2 col-form-label">End Date</label>
+          <div class="col-sm-3">
+            <input type="datetime-local" formControlName="endDate" class="form-control" id="endDate">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="priceList" class="col-sm-2 col-form-label">Price List</label>
+          <div class="col-sm-3">
+            <input type="number" formControlName="priceList" class="form-control" id="priceList">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="price" class="col-sm-2 col-form-label">Price</label>
+          <div class="col-sm-3">
+            <input type="number" formControlName="price" class="form-control" id="price">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="brandId" class="col-sm-2 col-form-label">Brand Id</label>
+          <div class="col-sm-3">
+            <input type="number" formControlName="brandId" class="form-control" id="brandId">
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

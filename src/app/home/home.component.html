@@ -1,0 +1,26 @@
+<div class="prices">
+    <h2 class="page__title price__title">Prices list</h2>
+
+    <table class="table">
+        <thead class="table__header">
+            <tr class="table__row">
+                <th class="table__row__th th-product-id">Product Id</th>
+                <th class="table__row__th th-startDate">Start Date</th>
+                <th class="table__row__th th-endDate">End Date</th>
+                <th class="table__row__th th-priceList">Price List</th>
+                <th class="table__row__th th-price">Price</th>
+                <th class="table__row__th th-brand-id">Brand Id</th>
+            </tr>
+        </thead>
+        <tbody class="table__body">
+            <tr *ngFor="let price of arrayPrices" class="table__row">
+                <td class="table__row__td td-product-id">{{price.productId}}</td>
+                <td class="table__row__td td-startDate">{{price.startDate | date: 'dd-MM-yyyy HH:mm:ss'}}</td>
+                <td class="table__row__td td-endDate">{{price.endDate | date: 'dd-MM-yyyy HH:mm:ss'}}</td>
+                <td class="table__row__td td-priceList">{{price.priceList}}</td>
+                <td class="table__row__td td-price">{{price.price.toFixed(2)}}</td>
+                <td class="table__row__td td-brand-id">{{price.brandId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
