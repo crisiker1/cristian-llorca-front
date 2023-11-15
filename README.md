@@ -1,5 +1,5 @@
 # Prueba Cristian Llorca
-Back de prueba proceso selección. ANGULAR 11
+Front de prueba proceso selección. ANGULAR 11
 
 Hay aspectos que implementaría en un entorno real, y que aquí al ser una prueba, he decidido obviarlos por falta de tiempo.
 Estos aspectos son:
